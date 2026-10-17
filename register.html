@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>  
+        <meta charset="UTF-8">  
+        <title>Register | Department of Agricultural Engineering</title>  
+        <link rel="stylesheet" href="css/style.css"> </head> 
+        <body>  
+            <header>    
+                <h1>Department of Agricultural Engineering</h1>    
+                <p>SRM TRP Engineering College, Tiruchirappalli</p>  
+            </header>   <nav aria-label="Main menu">      
+                <a href="index.html">Home</a>      
+                <a href="about.html">About</a>      
+                <a href="courses.html">Courses</a>      
+                <a href="register.html" aria-current="page">Register</a>      
+                <a href="contact.html">Contact</a>  
+            </nav>   
+            <main>    
+                <section>      
+                    <h2>Admission enquiry form</h2>      
+                    <p>Fields marked required must be filled in.</p>      
+                    <form action="#" method="post">        
+                        <fieldset>          
+                            <legend>Personal details</legend>          
+                            <p>            
+                                <label for="fullname">Full name (required)</label>            
+                                <input type="text" id="fullname" name="fullname" required>
+                                </p>          
+                                <p>            
+                                    <label for="email">Email address (required)</label>            
+                                    <input type="email" id="email" name="email" required>          
+                                </p>          
+                                <p>            
+                                    <label for="phone">Mobile number, 10 digits (required)</label>            
+                                    <input type="tel" id="phone" name="phone" required>
+                                </p>          
+                                <p>            
+                                    <label for="dob">Date of birth (required)</label>            
+                                    <input type="date" id="dob" name="dob">          
+                                </p>          
+                                <p>            
+                                    <label for="mark">Class 12 percentage</label>            
+                                    <input type="number" id="mark" name="mark" min="0" max="100">          
+                                </p>        
+                            </fieldset>         
+                            <fieldset>          
+                                <legend>Your interests</legend>          
+                                <p>            
+                                    <label for="programme">Programme (required)</label>            
+                                    <select id="programme" name="programme" required>              
+                                        <option value="">Choose a programme</option>              
+                                        <option value="be-agri">Agricultural Engineering (UG)</option>              
+                                        <option value="irrigation-workshop">Irrigation design workshop</option>              
+                                        <option value="machinery-workshop">Farm machinery workshop</option>            
+                                    </select>          
+                                </p>        
+                            </fieldset>         
+                            <fieldset>          
+                                <legend>Preferred contact method (required)</legend>          
+                                <label><input type="radio" id="contact-email" name="contact" value="email" required> Email</label>          
+                                <label><input type="radio" id="contact-phone" name="contact" value="phone"> Phone</label>        
+                            </fieldset>         
+                            <fieldset>          
+                                <legend>Additional information</legend>          
+                                <p>            
+                                    <label for="marksheet">Upload mark sheet (PDF, JPG or PNG)</label>            
+                                    <input type="file" id="marksheet" name="marksheet" accept=".pdf,.jpg,.jpeg,.png">          
+                                </p>          
+                                <p>            
+                                    <label for="question">Your question</label>            
+                                    <textarea id="question" name="question" rows="4" cols="40" maxlength="500"></textarea>          
+                                </p>        
+                            </fieldset>         
+                            <p>          
+                                <button type="submit">Submit enquiry</button>          
+                                <button type="reset">Clear form</button>        
+                            </p>      
+                        </form>    
+                    </section>  
+                </main>  
+            </body> 
+            </html>
